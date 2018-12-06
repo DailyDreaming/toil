@@ -7,3 +7,5 @@ install:
   - make develop extras=[all] # adding extras to avoid import errors
 script:
   - TOIL_TEST_QUICK=True make test_offline
+env:
+  - BOTO_CONFIG=null
